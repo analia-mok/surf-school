@@ -1,0 +1,7 @@
+/* Tailwind Base CSS and Configuration */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom Font Imports */
+@import 'font';
