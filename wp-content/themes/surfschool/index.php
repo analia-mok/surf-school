@@ -12,7 +12,7 @@ get_header();
 ?>
 
 <main id="site-content">
-	<h1 class="font-sans font-bold">Surf School Theme</h1>
+	<h1 class="font-sans font-bold text-teal-900">Surf School Theme</h1>
 </main>
 
 <?php
