@@ -13,6 +13,14 @@
 // ACF Custom Fields
 require_once('inc/acf/custom_fields.php');
 
+// Support SVG
+function cc_mime_types($mimes)
+{
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *

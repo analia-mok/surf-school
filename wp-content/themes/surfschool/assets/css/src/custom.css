@@ -1,0 +1,9 @@
+/* Isolated CSS Classes */
+
+.btn {
+  @apply .block .text-center .uppercase .tracking-wide;
+}
+
+.btn-teal {
+  @apply .bg-teal-500 .text-white;
+}
