@@ -10,6 +10,9 @@
  * @since 1.0.0
  */
 
+// ACF Custom Fields
+require_once('inc/acf/custom_fields.php');
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
