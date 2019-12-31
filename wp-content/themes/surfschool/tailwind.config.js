@@ -13,6 +13,12 @@ module.exports = {
           800: '#12757C',
           900: '#052D30',
         },
+        purple: {
+          500: '#8987A1',
+        },
+      },
+      flex: {
+        full: '1 1 100%',
       },
       fontFamily: {
         sans: [
@@ -30,6 +36,9 @@ module.exports = {
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
         ],
+      },
+      height: {
+        'screen-90': '90vh',
       },
     },
   },

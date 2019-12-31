@@ -28,8 +28,3 @@
 	<?php
 	wp_body_open();
 	?>
-
-	<header id="site-header" class="header-footer-group" role="banner">
-	</header><!-- #site-header -->
-
-	<?php

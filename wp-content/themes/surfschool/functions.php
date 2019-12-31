@@ -149,7 +149,7 @@ if (!function_exists('wp_body_open')) {
  */
 function surfschool_skip_link()
 {
-	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __('Skip to the content', 'surfschool') . '</a>';
+	echo '<a class="skip-link screen-reader-text sr-only" href="#site-content">' . __('Skip to the content', 'surfschool') . '</a>';
 }
 
 add_action('wp_body_open', 'surfschool_skip_link', 5);
