@@ -161,3 +161,13 @@ function surfschool_skip_link()
 }
 
 add_action('wp_body_open', 'surfschool_skip_link', 5);
+
+function surfschool_nav_class($classes, $item, $args)
+{
+	if ($args->theme_location === 'primary') {
+		$classes[] = 'px-8 py-4 text-center text-teal-900 hover:text-teal-600 hover:underline cursor-pointer';
+	}
+
+	return $classes;
+}
+add_filter('nav_menu_css_class', 'surfschool_nav_class', 10, 4);

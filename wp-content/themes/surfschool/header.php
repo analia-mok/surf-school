@@ -28,3 +28,20 @@
 	<?php
 	wp_body_open();
 	?>
+
+	<nav class="absolute top-0 inset-x-0">
+		<div class="container mx-auto">
+			<?php
+			if (has_nav_menu('primary')) {
+				wp_nav_menu(
+					array(
+						'container'  => 'ul',
+						'menu_class' => 'list-none py-4 flex justify-center uppercase tracking-normal font-bold',
+						'items_wrap' => '<ul id="hello %1$s" class="%2$s">%3$s</ul>',
+						'theme_location' => 'primary',
+					)
+				);
+			}
+			?>
+		</div>
+	</nav>

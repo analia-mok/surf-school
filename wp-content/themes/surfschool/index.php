@@ -17,7 +17,7 @@ $hero_title = get_field('hero_title');
 $hero_img = get_field('hero_image');
 $hero_img_url = $hero_img['url'] ?? '';
 
-// Tabs Massaging
+// TODO: Tabs Massaging
 
 ?>
 
@@ -34,6 +34,7 @@ $hero_img_url = $hero_img['url'] ?? '';
 </header><!-- #site-header -->
 
 <main id="site-content">
+	<!-- TODO: Implement tabs -->
 	<h1 class="font-sans font-bold text-teal-900">Surf School Theme</h1>
 </main>
 
