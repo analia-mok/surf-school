@@ -13,26 +13,27 @@
  */
 
 ?>
-<footer id="site-footer" role="contentinfo" class="header-footer-group">
-
-	<div class="section-inner">
-
-		<div class="footer-credits">
-
-			<p class="footer-copyright">&copy;
-				<?php
-				echo date_i18n(
-					/* translators: Copyright date format, see https://secure.php.net/date */
-					_x('Y', 'copyright date format', 'surfschool')
+<footer role="contentinfo">
+	<div class="bg-teal-500">
+		<nav class="container mx-auto">
+			<?php
+			if (has_nav_menu('footer')) {
+				wp_nav_menu(
+					array(
+						'container'  => 'ul',
+						'menu_class' => 'list-none text-white flex justify-center uppercase tracking-wide font-bold',
+						'theme_location' => 'footer',
+					)
 				);
-				?>
-				<a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-			</p><!-- .footer-copyright -->
-
-		</div><!-- .footer-credits -->
-
-	</div><!-- .section-inner -->
-
+			} ?>
+		</nav>
+	</div>
+	<div class="bg-teal-800 py-4">
+		<div class="container mx-auto text-white">
+			<p>Design with by Ashik. All Rights Reserved</p>
+			<!-- TODO: Implement socials -->
+		</div>
+	</div>
 </footer><!-- #site-footer -->
 
 <?php wp_footer(); ?>

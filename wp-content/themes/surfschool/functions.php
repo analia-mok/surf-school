@@ -166,6 +166,8 @@ function surfschool_nav_class($classes, $item, $args)
 {
 	if ($args->theme_location === 'primary') {
 		$classes[] = 'px-8 py-4 text-center text-teal-900 hover:text-teal-600 hover:underline cursor-pointer';
+	} elseif ($args->theme_location === 'footer') {
+		$classes[] = 'flex-grow p-4 text-center text-white hover:underline cursor-pointer';
 	}
 
 	return $classes;

@@ -36,8 +36,7 @@
 				wp_nav_menu(
 					array(
 						'container'  => 'ul',
-						'menu_class' => 'list-none py-4 flex justify-center uppercase tracking-normal font-bold',
-						'items_wrap' => '<ul id="hello %1$s" class="%2$s">%3$s</ul>',
+						'menu_class' => 'list-none py-4 flex justify-center uppercase tracking-wide font-bold',
 						'theme_location' => 'primary',
 					)
 				);
