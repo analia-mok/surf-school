@@ -28,7 +28,7 @@
 			} ?>
 		</nav>
 	</div>
-	<div class="bg-teal-800 py-4">
+	<div class="bg-teal-600 py-4">
 		<div class="container mx-auto text-white">
 			<p>Design with by Ashik. All Rights Reserved</p>
 			<!-- TODO: Implement socials -->

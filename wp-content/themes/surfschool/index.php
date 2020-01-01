@@ -49,8 +49,37 @@ foreach ($tab_nums as $num) {
 	</div>
 </header><!-- #site-header -->
 
-<main id="site-content">
-
+<main id="site-content" class="relative container mx-auto">
+	<section class="absolute left-0 right-0" style="bottom:100%;">
+		<div class="flex container mx-auto">
+			<?php $count = 1; ?>
+			<?php foreach ($tab_content as $tab) : ?>
+				<div class="flex-1 text-white bg-teal--500 hover:bg-teal-500 px-4 py-6 cursor-pointer border-solid border-white border border-b-0 relative">
+					<span class="uppercase text-xs text-white absolute right-0 pr-4 tracking-wide font-medium">Level <?php echo $count; ?></span>
+					<img src="<?php echo $tab['icon']['url']; ?>" alt="<?php echo $tab['icon']['alt'] ?? $tab['title']; ?>" class="w-8 h-8">
+					<strong class="block mt-2 mb-4 text-lg"><?php echo $tab['title']; ?></strong>
+					<p class="text-sm"><?php echo $tab['description']; ?></p>
+				</div>
+				<?php $count += 1; ?>
+			<?php endforeach; ?>
+		</div><!-- End of tab container -->
+	</section>
+	<section class="container mx-auto bg-gray-200">
+		<?php $count = 1; ?>
+		<?php foreach ($tab_details as $tab) : ?>
+			<div id="tab<?php echo $count; ?>" class="flex">
+				<div class="flex-half">
+					<img src="<?php echo $tab['image']['url']; ?>" alt="<?php echo $tab['image']['alt']; ?>">
+				</div>
+				<div class="flex-half px-4">
+					<strong class="uppercase text-teal-500 tracking-wide">Level <?php echo $count; ?></strong>
+					<h2><?php echo $tab['title']; ?></h2>
+					<p class="leading-none"><?php echo $tab['description']; ?></p>
+				</div>
+			</div>
+			<?php $count += 1; ?>
+		<?php endforeach; ?>
+	</section><!-- End of tab details -->
 </main>
 
 <?php
